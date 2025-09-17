@@ -33,7 +33,7 @@ You’ll need:
 
 To set up:
 
-bash
+```bash
 git clone https://github.com/VuKe77/Wave-Detector.git
 cd Wave-Detector
 
@@ -45,14 +45,12 @@ source venv/bin/activate    # On Windows: .\venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-🚀 Usage
-
-Prepare or place your input video/images (in Wave_data/ or similarly).
-Ensure YOLO model and weights are correctly configured/loaded.
+## 🚀 Usage
 Run the HandDetection.py
 Output will indicate when a wave gesture is detected (via console and overlay on video frames).
+Detection is performed ONLINE! (Could be adjusted to do offline detection)
 
-🧠 How It Works
+## 🧠 How It Works
 
 The YOLO model detects bounding boxes around hands.
 Then a pattern recognition component together with CSRT and SORT algorithms determines whether the detected hand(s) is doing a wave.
